@@ -5,7 +5,7 @@ import './header.css';
 function Header() {
     /* toggle menu */
     const [Toggle, showMenu] = useState(false);
-    const [line, setLine] = useState(0);
+    const [line, setLine] = useState(1);
 
     const handleClick = (e) => {
         setLine(e)
@@ -15,7 +15,7 @@ function Header() {
 
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav__logo">Le Khanh Toan</a>  
+                <a href="index.html" className="nav__logo" onClick={() => handleClick(1)}>Le Khanh Toan</a>  
 
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
@@ -55,14 +55,14 @@ function Header() {
                             </a>
                         </li>
 
-                        <li className="nav__item" onClick={() => handleClick(5)}>
+                        {/* <li className="nav__item" onClick={() => handleClick(5)}>
                             <a href="#portfolio" className={line === 5 ? "nav__link active-link" : "nav__link"}>
                                 <i className="uil uil-scenery nav__icon">
                                 </i>
                                     Portfolio
                                 <div className={line === 5 ? "line-active" : "line"}></div>
                             </a>
-                        </li>
+                        </li> */}
 
                         <li className="nav__item" onClick={() => handleClick(6)}>
                             <a href="#contact" className={line === 6 ? "nav__link active-link" : "nav__link"}>

@@ -1,0 +1,100 @@
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    line-height: 2rem;
+    column-gap: 3rem;
+}
+
+.wrapper-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border : 1px solid;
+    border-radius : 1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding : 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    min-width: 300px;
+}
+.icon {
+    font-size: 2rem;
+}
+.card__icon {
+    display: flex;
+    align-items: center;
+}
+.icon-right {
+    font-size: 1.3rem;
+}
+
+.card:hover .icon-right{
+    transform: translate(6px, 0px);
+    color: black;
+    transition: 0.5s;
+}
+.card:hover .text {
+    color: black;
+}
+.card:hover .icon {
+    scale: 1.3;
+    color: black;
+    transition: 0.5s;
+}
+
+.title {
+    position: absolute;
+    top: -1rem;
+    left: 1.5rem;
+    background-color: #fafafa;
+    padding: 0 5px;
+
+}
+.__input {
+    position: relative;
+    width: 30rem;
+    display: flex;
+    border: 1px solid;
+    border-radius: 2rem;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.input__content {
+    border: transparent;
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+    width: 90%;
+    resize: none;
+}
+
+.button-send {
+    padding: 1rem 3rem;
+    color: white;
+    border-radius: 1rem;
+    background-color: #333333;
+    margin: 1rem;
+}
+.uil-message {
+    margin-left: .5rem;
+}
+.button-send:hover {
+    background-color: black;
+}
+.button-send:hover .uil-message {
+    transform: translateX(0, 6px);
+    transition: .3s;
+}
+.delete {
+    cursor: pointer;
+}

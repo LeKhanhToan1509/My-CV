@@ -88,5 +88,27 @@
 }
 .qualification__data:hover .qualification__rounter {
     scale: 1.1;
+
+}
+
+@media screen and (max-width: 992px) {
+    .qualification__center {
+        margin-left: auto;
+        mmargin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .qualification__container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+@media screen and (max-width: 350px) {
     
 }
