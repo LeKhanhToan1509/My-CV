@@ -103,10 +103,10 @@
     }
 }
 
-/* CSS */
+
 .line-active {
     height: 1px;
-    width: 100%; /* Đặt chiều rộng ban đầu là 0 */
+    width: 100%;
     background-color: black;
     position: absolute;
     bottom: 0px;
