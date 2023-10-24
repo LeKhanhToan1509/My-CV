@@ -37,7 +37,7 @@ function Contact() {
     };
 
     const handleClick = () => {
-        setValue('');
+        setValue("");
         nameRef.current.focus();
     };
 
@@ -72,11 +72,11 @@ function Contact() {
             <div className="wrapper container">
             <div className="wrapper-card">
                     <h3 className="card__title">Talk to me</h3>
-                    <div className="card">
+                    <div className="card" onClick={() => {window.open("https://mail.google.com/mail/u/0/#inbox", '_blank')}}>
                         <i className="uil uil-envelope-minus icon"></i>
                         <h4 className="card__atribute">Email</h4>
                         <h5 className="email">toanxm1509@gmail.com</h5>
-                        <div className="card__icon" onClick={handleClick}>
+                        <div className="card__icon" >
                             <p className="text">Write me</p>
                             <i className="uil uil-arrow-right icon-right"></i>
                         </div>
@@ -108,7 +108,7 @@ function Contact() {
                         <div>
                             <form ref={form}>
                                 <div className="__input" ref = {nameRef}>
-                                    <h5 className="title">Name</h5>
+                                    <h5 className="title">Name</h5> 
                                     <input
                                         name="from_name"
                                         type="text"

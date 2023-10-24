@@ -98,3 +98,26 @@
 .delete {
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns : 1fr;
+        align-self: center;
+    }
+    .card {
+        min-width: 80%;
+        
+    }
+    .input {
+        display: grid;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .__input {
+        max-width: 300px;
+    }
+
+}
