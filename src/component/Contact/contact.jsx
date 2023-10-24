@@ -106,7 +106,7 @@ function Contact() {
                             <h3 className="title_content">Write me your project</h3>
                         </div>
                         <div>
-                            <form ref={form} onSubmit={sendEmail}>
+                            <form ref={form}>
                                 <div className="__input" ref = {nameRef}>
                                     <h5 className="title">Name</h5>
                                     <input
